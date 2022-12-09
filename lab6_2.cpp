@@ -4,11 +4,11 @@
 using namespace std;
 
 double deg2rad(double deg1){
-     double rad1 = deg1 * 3.1416 / 180;
+     double rad1 = deg1 * M_PI / 180;
      return rad1;
 }
 double rad2deg(double deg2){
-    double rad2 = deg2 * 180 / 3.1416;
+    double rad2 = deg2 * 180 / M_PI;
      return rad2;
 }
 double findXComponent(double lenx1,double lenx2,double x1,double x2){
@@ -33,7 +33,7 @@ double pythagoras(double x, double y){
 double showResult(double result_length,double result_direction){
     cout <<"Length of the resultant vector "<< result_length << endl;
     cout << "Direction of the resultant vector (deg)" << result_direction << endl;
-
+    return 0;
 }
 
 int main(){
